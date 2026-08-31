@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Amazon Clone - Modern responsive e-commerce website with products, deals, shopping cart and search.">
+
+    <meta name="keywords" content="Amazon Clone, E-commerce, Shopping, Products, Deals, JavaScript">
+
+    <meta name="author" content="Syeda Noor Fatima">
+
+    <title>Amazon Clone | Online Shopping</title>
+
+    <!-- ================= FONT AWESOME ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ================= CSS ================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+                         HEADER
+    ====================================================== -->
+
+    <header id="header">
+
+        <!-- ================= TOP NAVIGATION ================= -->
+
+        <div class="navbar">
+
+            <!-- Mobile Menu -->
+            <button class="mobile-menu" type="button" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <!-- Logo -->
+            <div class="nav-logo border">
+                <a href="#" class="amazon-logo">
+                    amazon<span>.com</span>
+                </a>
+            </div>
+
+
+            <!-- Location -->
+            <div class="nav-address border">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <p class="add-first">Deliver to</p>
+                    <p class="add-second">Pakistan</p>
+                </div>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="nav-search">
+
+                <select class="search-select" aria-label="Search category">
+
+                    <option value="all">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Home">Home</option>
+                    <option value="Beauty">Beauty</option>
+
+                </select>
+
+                <input type="text" class="search-input" placeholder="Search Amazon" aria-label="Search products">
+
+                <button class="search-icon" type="button" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Language -->
+            <div class="nav-language border">
+
+                <span>🇺🇸</span>
+                <span>EN</span>
+
+                <i class="fa-solid fa-caret-down"></i>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="nav-signin border">
+
+                <p>
+                    <span>Hello, sign in</span>
+                </p>
+
+                <p class="nav-second">
+                    Account & Lists
+                    <i class="fa-solid fa-caret-down"></i>
+                </p>
+
+            </div>
+
+
+            <!-- Orders -->
+            <div class="nav-return border">
+
+                <p>
+                    <span>Returns</span>
+                </p>
+
+                <p class="nav-second">
+                    & Orders
+                </p>
+
+            </div>
+
+
+            <!-- Wishlist -->
+            <button class="nav-wishlist border" type="button">
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span>Wishlist</span>
+
+            </button>
+
+
+            <!-- Cart -->
+            <button class="nav-cart border" type="button"
+                onclick="document.querySelector('#cart')?.scrollIntoView({behavior:'smooth'})">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count">0</span>
+
+                <span>Cart</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= SECOND NAVIGATION ================= -->
+
+        <div class="panel">
+
+            <button class="panel-all" type="button">
+
+                <i class="fa-solid fa-bars"></i>
+
+                <span>All</span>
+
+            </button>
+
+
+            <nav class="panel-ops">
+
+                <a href="#deals">
+                    Today's Deals
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#products">
+                    Products
+                </a>
+
+                <a href="#products">
+                    Electronics
+                </a>
+
+                <a href="#products">
+                    Fashion
+                </a>
+
+                <a href="#cart">
+                    Shopping Cart
+                </a>
+
+                <a href="#footer">
+                    Customer Service
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+                           MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small-title">
+                    Welcome to Amazon Clone
+                </p>
+
+                <h1>
+                    Everything you need,
+                    <span>all in one place.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover amazing products, exclusive deals,
+                    electronics, fashion, home essentials and more.
+                </p>
+
+                <a href="#products" class="hero-btn">
+
+                    Shop Now
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- Previous -->
+            <button class="hero-arrow hero-left" type="button" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+
+            <!-- Next -->
+            <button class="hero-arrow hero-right" type="button" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- ================= CATEGORY SECTION ================= -->
+
+        <section class="category-section" id="categories">
+
+            <div class="section-heading">
+
+                <h2>
+                    Explore Categories
+                </h2>
+
+                <a href="#products">
+                    See all
+                </a>
+
+            </div>
+
+
+            <div class="shop-section">
+
+
+                <!-- Gaming -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Gaming Accessories
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80"
+                                alt="Gaming accessories" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Gaming">
+                            Shop gaming
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Home -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Home Essentials
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=800&q=80"
+                                alt="Home essentials" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Home">
+                            Explore home
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Fashion -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Fashion Trends
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80"
+                                alt="Fashion trends" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Fashion">
+                            Discover fashion
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Beauty -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Beauty & Personal Care
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80"
+                                alt="Beauty products" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Beauty">
+                            Shop beauty
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Electronics -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Smart Electronics
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80"
+                                alt="Smartphone and electronics" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Electronics">
+                            Shop electronics
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Headphones -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Headphones
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+                                alt="Headphones" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Electronics">
+                            See more
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Furniture -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Furniture
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                                alt="Modern furniture" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="Home">
+                            Shop furniture
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Books -->
+                <article class="box">
+
+                    <div class="box-content">
+
+                        <h2>
+                            Books
+                        </h2>
+
+                        <div class="box-img">
+
+                            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=800&q=80"
+                                alt="Books" loading="lazy">
+
+                        </div>
+
+                        <button class="category-btn" type="button" data-category="all">
+                            Explore books
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+
+                <h2>
+                    Featured Products
+                </h2>
+
+                <a href="#deals">
+                    See today's deals
+                </a>
+
+            </div>
+
+
+            <!-- JavaScript will insert products here -->
+            <div class="products-container"></div>
+
+        </section>
+
+
+        <!-- ================= TODAY'S DEALS ================= -->
+
+        <section class="deals-section" id="deals">
+
+            <div class="section-heading">
+
+                <h2>
+                    Today's Deals
+                </h2>
+
+                <a href="#products">
+                    See all products
+                </a>
+
+            </div>
+
+
+            <div class="product-row">
+
+
+                <!-- ================= PRODUCT 1 ================= -->
+
+                <article class="product-card">
+
+                    <div class="discount">
+                        30% off
+                    </div>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Smart Watch to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                        alt="Smart Watch" loading="lazy">
+
+                    <h3>
+                        Smart Watch
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                        <span>4.4</span>
+                    </div>
+
+                    <p class="price">
+                        $69.99
+                    </p>
+
+                    <button class="add-cart-btn" type="button" onclick='addToCart({
+                            id: 101,
+                            name: "Smart Watch",
+                            category: "Electronics",
+                            price: 69.99,
+                            rating: 4.4,
+                            reviews: 250,
+                            image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                        })'>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- ================= PRODUCT 2 ================= -->
+
+                <article class="product-card">
+
+                    <div class="discount">
+                        25% off
+                    </div>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Running Shoes to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                        alt="Running Shoes" loading="lazy">
+
+                    <h3>
+                        Running Shoes
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>4.8</span>
+                    </div>
+
+                    <p class="price">
+                        $49.99
+                    </p>
+
+                    <button class="add-cart-btn" type="button" onclick='addToCart({
+                            id: 102,
+                            name: "Running Shoes",
+                            category: "Fashion",
+                            price: 49.99,
+                            rating: 4.8,
+                            reviews: 300,
+                            image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                        })'>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- ================= PRODUCT 3 ================= -->
+
+                <article class="product-card">
+
+                    <div class="discount">
+                        40% off
+                    </div>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Bluetooth Speaker to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80"
+                        alt="Bluetooth Speaker" loading="lazy">
+
+                    <h3>
+                        Bluetooth Speaker
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                        <span>4.5</span>
+                    </div>
+
+                    <p class="price">
+                        $39.99
+                    </p>
+
+                    <button class="add-cart-btn" type="button" onclick='addToCart({
+                            id: 103,
+                            name: "Bluetooth Speaker",
+                            category: "Electronics",
+                            price: 39.99,
+                            rating: 4.5,
+                            reviews: 220,
+                            image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80"
+                        })'>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- ================= PRODUCT 4 ================= -->
+
+                <article class="product-card">
+
+                    <div class="discount">
+                        20% off
+                    </div>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Smartphone to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80"
+                        alt="Smartphone" loading="lazy">
+
+                    <h3>
+                        Smartphone
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>4.9</span>
+                    </div>
+
+                    <p class="price">
+                        $299.99
+                    </p>
+
+                    <button class="add-cart-btn" type="button" onclick='addToCart({
+                            id: 104,
+                            name: "Smartphone",
+                            category: "Electronics",
+                            price: 299.99,
+                            rating: 4.9,
+                            reviews: 500,
+                            image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80"
+                        })'>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <!-- ================= PRODUCT 5 ================= -->
+
+                <article class="product-card">
+
+                    <div class="discount">
+                        35% off
+                    </div>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Premium Laptop to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80"
+                        alt="Premium Laptop" loading="lazy">
+
+                    <h3>
+                        Premium Laptop
+                    </h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                        <span>4.7</span>
+                    </div>
+
+                    <p class="price">
+                        $799.99
+                    </p>
+
+                    <button class="add-cart-btn" type="button" onclick='addToCart({
+                            id: 105,
+                            name: "Premium Laptop",
+                            category: "Electronics",
+                            price: 799.99,
+                            rating: 4.7,
+                            reviews: 450,
+                            image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80"
+                        })'>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CART ================= -->
+
+        <section class="cart-section" id="cart">
+
+            <div class="section-heading">
+
+                <h2>
+                    Shopping Cart
+                </h2>
+
+            </div>
+
+
+            <!-- JavaScript renders cart items here -->
+            <div class="cart-container"></div>
+
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+
+                <h3>
+                    Cart Total:
+                </h3>
+
+                <strong class="cart-total">
+                    $0.00
+                </strong>
+
+
+                <button class="checkout-btn" type="button" onclick="showNotification('Checkout feature coming soon!')">
+
+                    Proceed to Checkout
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+                         FOOTER
+    ====================================================== -->
+
+    <footer id="footer">
+
+
+        <!-- Back To Top -->
+
+        <div class="footer-panel">
+
+            <a href="#header">
+                <i class="fa-solid fa-arrow-up"></i>
+                Back to top
+            </a>
+
+        </div>
+
+
+        <!-- Footer Links -->
+
+        <div class="footer-panel2">
+
+
+            <!-- Column 1 -->
+
+            <ul>
+
+                <h3>
+                    Get to Know Us
+                </h3>
+
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#">About Amazon</a>
+                </li>
+
+                <li>
+                    <a href="#">Investor Relations</a>
+                </li>
+
+                <li>
+                    <a href="#">Amazon Devices</a>
+                </li>
+
+                <li>
+                    <a href="#">Amazon Science</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Column 2 -->
+
+            <ul>
+
+                <h3>
+                    Make Money with Us
+                </h3>
+
+                <li>
+                    <a href="#">Sell products on Amazon</a>
+                </li>
+
+                <li>
+                    <a href="#">Sell on Amazon Business</a>
+                </li>
+
+                <li>
+                    <a href="#">Sell apps on Amazon</a>
+                </li>
+
+                <li>
+                    <a href="#">Become an Affiliate</a>
+                </li>
+
+                <li>
+                    <a href="#">Advertise Your Products</a>
+                </li>
+
+                <li>
+                    <a href="#">Self-Publish with Us</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Column 3 -->
+
+            <ul>
+
+                <h3>
+                    Amazon Payment Products
+                </h3>
+
+                <li>
+                    <a href="#">Amazon Business Card</a>
+                </li>
+
+                <li>
+                    <a href="#">Shop with Points</a>
+                </li>
+
+                <li>
+                    <a href="#">Reload Your Balance</a>
+                </li>
+
+                <li>
+                    <a href="#">Amazon Currency Converter</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Column 4 -->
+
+            <ul>
+
+                <h3>
+                    Let Us Help You
+                </h3>
+
+                <li>
+                    <a href="#">Your Account</a>
+                </li>
+
+                <li>
+                    <a href="#">Your Orders</a>
+                </li>
+
+                <li>
+                    <a href="#">Shipping Rates & Policies</a>
+                </li>
+
+                <li>
+                    <a href="#">Returns & Replacements</a>
+                </li>
+
+                <li>
+                    <a href="#">Manage Your Content</a>
+                </li>
+
+                <li>
+                    <a href="#">Help</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Footer Logo -->
+
+        <div class="footer-panel3">
+
+            <a href="#header" class="footer-logo">
+                amazon<span>.com</span>
+            </a>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-panel4">
+
+            <div class="pages">
+
+                <a href="#">
+                    Conditions of Use
+                </a>
+
+                <a href="#">
+                    Privacy Notice
+                </a>
+
+                <a href="#">
+                    Your Ads Privacy Choices
+                </a>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Amazon Clone —
+                Educational Project
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
