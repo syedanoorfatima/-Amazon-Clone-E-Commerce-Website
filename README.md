@@ -1,48 +1,43 @@
-# 🛒 Amazon Clone — E-Commerce Website
+# 🛒 Amazon-Inspired E-Commerce Website
 
-A modern and responsive **Amazon Clone** built to replicate the core shopping experience of a popular e-commerce platform. This project demonstrates a clean UI, responsive design, product browsing, search functionality, shopping cart interactions, and a user-friendly checkout experience.
+A frontend e-commerce practice project inspired by common online-shopping experiences. It demonstrates product presentation, search interactions, shopping-cart behavior, and responsive page styling.
 
-## 🚀 Features
+> This is an independent educational project and is not affiliated with, endorsed by, or sponsored by Amazon.
 
-* 🏠 Amazon-inspired homepage
-* 🔍 Product search functionality
-* 🛍️ Product categories and listings
-* 🛒 Add-to-cart functionality
-* 💰 Cart item and price management
-* 📦 Product details
-* 📱 Fully responsive design
-* 🎨 Modern and clean user interface
-* ⚡ Interactive JavaScript functionality
-* 🔝 Back-to-top navigation
-* 📱 Mobile, tablet, and desktop support
+## ✨ Features
 
-## 🛠️ Technologies Used
+- E-commerce-style homepage
+- Product browsing and category sections
+- Product search interface
+- Add-to-cart interactions
+- Cart quantity and price updates
+- Responsive layout
+- Interactive JavaScript elements
+- Back-to-top navigation
 
-* HTML5
-* CSS3
-* JavaScript
-* Font Awesome
-* Google Fonts
-* Responsive Web Design
+## 🧰 Tech Stack
 
-## 🎯 Project Purpose
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
 
-This project was created as a practical **frontend development project** to improve skills in building responsive e-commerce interfaces, implementing interactive UI components, managing shopping-cart interactions, and creating a professional user experience.
+## ▶️ Run Locally
 
-## 👩‍💻 Developer
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/syedanoorfatima/-Amazon-Clone-E-Commerce-Website.git
+   ```
+2. Open the project folder.
+3. Open `index.html` in your browser, or run it through a local development server.
+
+## 🎯 Learning Goals
+
+This project helped practice responsive frontend development, DOM manipulation, JavaScript event handling, product search, and shopping-cart logic.
+
+## 👩‍💻 Author
 
 **Syeda Noor Fatima**
-MERN Stack Developer | Web Developer
 
-### ⭐ Key Learning Areas
-
-* Responsive website development
-* E-commerce UI/UX
-* DOM manipulation
-* JavaScript event handling
-* Search and filtering
-* Shopping cart logic
-* Modern CSS layouts
-* Git & GitHub workflow
-
-> **Note:** This project is created for educational and portfolio purposes and is not affiliated with or endorsed by Amazon.
+[GitHub](https://github.com/syedanoorfatima) · [LinkedIn](https://www.linkedin.com/in/syeda-noor-fatima-webdeveloper)
