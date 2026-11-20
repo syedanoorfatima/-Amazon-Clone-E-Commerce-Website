@@ -4,6 +4,12 @@ A frontend e-commerce practice project inspired by common online-shopping experi
 
 > This is an independent educational project and is not affiliated with, endorsed by, or sponsored by Amazon.
 
+
+## 🌐 Live Demo
+
+[Open the deployed website](https://amazon-clone-e-commerce-website.vercel.app)
+
+
 ## ✨ Features
 
 - E-commerce-style homepage
@@ -41,3 +47,8 @@ This project helped practice responsive frontend development, DOM manipulation, 
 **Syeda Noor Fatima**
 
 [GitHub](https://github.com/syedanoorfatima) · [LinkedIn](https://www.linkedin.com/in/syeda-noor-fatima-webdeveloper)
+
+
+## 📸 Screenshots
+
+Screenshots are not yet included in this repository README. Add genuine screenshots of the running project in a `screenshots/` folder and link them here so visitors can preview the actual interface.
